@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<declare-styleable name="HomeHierarchyView">
+<!--是否文字，true 文字，false 是图片.-->
+<attr name="texture" format="boolean"/>
+<!--待量房-->
+<attr name="waitingMeasure" format="string"/>
+<!--待预交底-->
+<attr name="waitingSubmit" format="string"/>
+<!--        待签约-->
+<attr name="waitingSign" format="string"/>
+<!--        未开工-->
+<attr name="statUnStart" format="string"/>
+<!--       施工中-->
+<attr name="statInProgress" format="string"/>
+<!--        已竣工-->
+<attr name="statOnFinished" format="string"/>
+<!--        已结算-->
+<attr name="statClearing" format="string"/>
+
+</declare-styleable>
+</resources>
