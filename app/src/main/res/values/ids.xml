@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <item name="ll_1" type="id"/>
+        <item name="ll_2" type="id"/>
+        <item name="ll_3" type="id"/>
+        <item name="ll_4" type="id"/>
+        <item name="ll_5" type="id"/>
+        <item name="ll_6" type="id"/>
+        <item name="ll_7" type="id"/>
+
+        <item name="tv_top1" type="id"/>
+        <item name="tv_top2" type="id"/>
+        <item name="tv_top3" type="id"/>
+        <item name="tv_top4" type="id"/>
+        <item name="tv_top5" type="id"/>
+        <item name="tv_top6" type="id"/>
+        <item name="tv_top7" type="id"/>
+
+        <item name="v_1" type="id"/>
+        <item name="v_2" type="id"/>
+        <item name="v_3" type="id"/>
+        <item name="v_4" type="id"/>
+        <item name="v_5" type="id"/>
+        <item name="v_6" type="id"/>
+        <item name="v_7" type="id"/>
+    </resources>
