@@ -145,6 +145,5 @@ class IndicatorView : View {
         }
         this.postInvalidate()
     }
-
 }
 

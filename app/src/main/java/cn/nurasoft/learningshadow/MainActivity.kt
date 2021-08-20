@@ -21,16 +21,14 @@ import com.bumptech.glide.request.target.Target
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
+import org.jetbrains.anko.find
 import timber.log.Timber
 import timber.log.Timber.DebugTree
 import kotlin.math.roundToInt
 
 class MainActivity : AppCompatActivity() {
 
-
-    private lateinit var content:TextView
-     private lateinit var iView:IndicatorView
-     private lateinit var imageView: ImageView
+    // private lateinit var imageView: ImageView
      private lateinit var btn:Button
      lateinit var bitmapList:MutableList<Bitmap>
      var position=0
@@ -41,13 +39,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         //绑定.
         bitmapList= mutableListOf()
-        content=findViewById(R.id.main)
+      //  content=findViewById(R.id.main)
         btn=findViewById(R.id.btn_scale)
-
+       // imageView=find(R.id.iv_image)
       //  iView=findViewById(R.id.iv_me)
         //点击事件.
         btn.setOnClickListener {
-            imageView.setImageBitmap(bitmapList[position])
+        //    imageView.setImageBitmap(bitmapList[position])
             if (position==bitmapList.size-1){
                 position=0
             }else{
@@ -55,10 +53,10 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        imageView=findViewById(R.id.iv_src)
+      //  imageView=findViewById(R.id.iv_src)
 
 
-        Glide.with(this)
+/*        Glide.with(this)
             .asBitmap()
             .load("https://cdn.modesens.cn/blog/20210710-1.png")
        //     .load("https://cdn.modesens.cn/blog/628lj1.png")
@@ -119,7 +117,7 @@ class MainActivity : AppCompatActivity() {
                     return true
                 }
 
-            }).into(imageView)
+            }).into(imageView)*/
     }
 
     // Generate palette synchronously and return it

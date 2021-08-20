@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
-
+    compileSdkVersion 30
+    buildToolsVersion '30.0.3'
     defaultConfig {
         applicationId "cn.nurasoft.learningshadow"
-        minSdk 26
-        targetSdk 30
+        minSdkVersion 21
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
@@ -48,4 +48,6 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
     implementation "org.jetbrains.anko:anko:0.10.8"
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'com.caverock:androidsvg-aar:1.4'
 }

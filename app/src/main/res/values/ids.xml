@@ -23,4 +23,6 @@
         <item name="v_5" type="id"/>
         <item name="v_6" type="id"/>
         <item name="v_7" type="id"/>
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
     </resources>

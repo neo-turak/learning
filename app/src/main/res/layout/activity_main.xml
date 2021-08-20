@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,41 +7,78 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/human"
+        android:visibility="gone"
+        />
 
     <cn.nurasoft.learningshadow.IndicatorView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         app:indicatorCount="6"
+        android:visibility="gone"
         android:layout_marginTop="30dp"
         app:indicatePosition="3"
         app:indicateMainColor="@android:color/holo_blue_bright"
         />
 
-
-    <Button
+    <cn.nurasoft.learningshadow.IndicatorView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:indicateMainColor="@android:color/holo_blue_bright"
+        app:indicatePosition="3"
+        app:indicatorCount="3" />
+
+    <cn.nurasoft.learningshadow.IndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:indicateMainColor="@android:color/holo_blue_bright"
+        app:indicatePosition="1"
+        app:indicatorCount="3" />
+
+    <cn.nurasoft.learningshadow.IndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:indicateMainColor="@android:color/holo_blue_bright"
+        app:indicatePosition="1"
+        app:indicatorCount="2" />
+
+    <cn.nurasoft.learningshadow.IndicatorView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        app:indicateMainColor="@android:color/holo_blue_bright"
+        app:indicatePosition="1"
+        app:indicatorCount="1" />
+
+
+    <Button
         android:id="@+id/btn_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="scale"
-        />
+        android:visibility="gone" />
 
 
-    <cn.nurasoft.learningshadow.HomeHierarchyView
-        android:id="@+id/hhv_controlPanel"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginStart="15dp"
-        app:texture="false"
-        app:waitingSign="10"
-        app:statClearing="230"
-        app:statInProgress="16"
-        app:statOnFinished="3"
-        app:statUnStart="20"
-        app:waitingMeasure="10"
-        app:waitingSubmit="9"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp" />
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+<cn.nurasoft.learningshadow.PostTagView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
