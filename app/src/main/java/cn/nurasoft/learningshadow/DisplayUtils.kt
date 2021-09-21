@@ -23,4 +23,9 @@ object DisplayUtils {
         val scale = Resources.getSystem().displayMetrics.density
         return (px / scale + 0.5f).toInt()
     }
+
+    fun dip2Px(dipValue: Int): Float {
+        val scale: Float = Resources.getSystem().displayMetrics.density
+        return (dipValue * scale + 0.5f)
+    }
 }
